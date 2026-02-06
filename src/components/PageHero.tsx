@@ -17,10 +17,10 @@ export default function PageHero({ title, backgroundImage = '/images/about-hero.
       <div className="relative z-10 text-center text-white">
         <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4">{title}</h1>
         <div className="flex items-center justify-center gap-2 text-sm md:text-base">
-          <Link to="/" className="text-gray-300 hover:text-primary transition-colors">
+          <Link to="/" className="text-white/70 hover:text-primary transition-colors">
             Home
           </Link>
-          <span className="text-gray-400">/</span>
+          <span className="text-white/50">/</span>
           <span className="text-white">{title}</span>
         </div>
       </div>

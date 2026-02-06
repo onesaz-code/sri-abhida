@@ -10,7 +10,7 @@ export default function FoundationCoursePage() {
       <PageHero title="Foundation Course – 8th, 9th & 10th Class" backgroundImage="/images/course-hero.webp" />
 
       {/* Why Foundation */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -18,10 +18,10 @@ export default function FoundationCoursePage() {
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">
                 Foundation Course – 8th, 9th & 10th Class
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 The Foundation Course for 8th, 9th, and 10th Class is designed to strengthen the core concepts in Science and Mathematics at an early stage. This course lays a solid groundwork for competitive exams like IIT JEE, ensuring students develop a deep understanding and aptitude in these subjects.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 Through interactive learning, regular assessments, and a focus on analytical thinking, the course aims to build a strong academic base, fostering confidence and a love for learning in young minds.
               </p>
               <Link
@@ -49,14 +49,14 @@ export default function FoundationCoursePage() {
       </section>
 
       {/* Course Content */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">Course Details</h2>
-            <p className="text-gray-600 leading-relaxed text-lg mb-6">
+            <p className="text-dark/70 leading-relaxed text-lg mb-6">
               This program builds up a concrete confidence about their success in IIT or any other meritorious exams of high standards. These students will definitely feel at ease in front of question paper as they have accustomed to similar type of papers in their regular practice.
             </p>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-dark/70 leading-relaxed text-lg">
               When the students start their approach towards IIT from 8th class onwards, it will be easy for adaptability to their respective subjects. By fostering a sense of self-awareness and building a solid conceptual foundation, students gain the confidence to excel.
             </p>
           </div>

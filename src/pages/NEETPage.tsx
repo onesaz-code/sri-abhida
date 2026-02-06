@@ -10,13 +10,13 @@ export default function NEETPage() {
       <PageHero title="NEET" backgroundImage="/images/course-hero.webp" />
 
       {/* Director's Letter */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-light rounded-2xl p-8 md:p-12 relative">
               <Quote className="absolute top-6 right-6 w-16 h-16 text-primary/10" />
               <p className="text-primary font-semibold mb-4 uppercase tracking-wider text-sm">Director's Letter</p>
-              <blockquote className="text-gray-700 text-lg leading-relaxed space-y-4">
+              <blockquote className="text-dark/80 text-lg leading-relaxed space-y-4">
                 <p>
                   "When a student of mine secured All India Rank 1 with a perfect 720/720, people asked me, 'What study material did you use?' My answer was simple: It wasn't just the book. It was the behavior."
                 </p>
@@ -47,7 +47,7 @@ export default function NEETPage() {
       </section>
 
       {/* Course Content */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -55,10 +55,10 @@ export default function NEETPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">Course Details</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 This program builds up a concrete confidence about their success in NEET or any other meritorious exams of high standards. These students will definitely feel at ease in front of question paper as they have accustomed to similar type of papers in their regular practice.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 By fostering a sense of self-awareness and confidence, our NEET program ensures that students are thoroughly prepared for one of India's most competitive medical entrance examinations.
               </p>
               <Link

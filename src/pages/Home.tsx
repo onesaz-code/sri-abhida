@@ -159,7 +159,7 @@ export default function Home() {
               type="button"
               aria-label="Close promo"
               onClick={() => setShowPromoModal(false)}
-              className="absolute -top-4 -right-4 h-10 w-10 rounded-full bg-white text-dark shadow-lg hover:bg-gray-100 transition"
+              className="absolute -top-4 -right-4 h-10 w-10 rounded-full bg-light text-dark shadow-lg hover:bg-light/80 transition"
             >
               X
             </button>
@@ -201,7 +201,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight">
                 We Design and Improve a Brighter Future For Your Education
               </h1>
-              <p className="text-lg md:text-xl mb-8 text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl mb-8 text-white/70 leading-relaxed max-w-xl">
                 We create innovative learning solutions that inspire students, empower educators, and drive academic success. From personalized programs to modern teaching methods, we help you achieve real, measurable growth with confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -214,7 +214,7 @@ export default function Home() {
                 </Link>
                 <a
                   href="tel:+919553300062"
-                  className="bg-white/10 backdrop-blur text-white border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-dark transition-all font-semibold text-lg inline-flex items-center justify-center"
+                  className="bg-light/10 backdrop-blur text-white border border-light/20 px-8 py-4 rounded-full hover:bg-light hover:text-dark transition-all font-semibold text-lg inline-flex items-center justify-center"
                 >
                   Request a Call Back
                 </a>
@@ -275,7 +275,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">
                 Sri Abhida About Us
               </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-dark/70 leading-relaxed">
                 <p>
                   <strong className="text-dark">Our Mission:</strong> Our mission is to empower students through exceptional education, fostering innovative thinking, and building a strong foundation for future academic and career success in a supportive, inclusive environment.
                 </p>
@@ -352,7 +352,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleAchievementPrev}
-                className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
                 aria-label="Previous achievement"
               >
                 <span className="text-xl font-bold leading-none">{'<'}</span>
@@ -365,7 +365,7 @@ export default function Home() {
                     type="button"
                     onClick={() => setAchievementIndex(index)}
                     className={`h-3 rounded-full transition-all ${
-                      index === safeAchievementIndex ? 'bg-primary w-8' : 'bg-gray-300 hover:bg-gray-400 w-3'
+                      index === safeAchievementIndex ? 'bg-primary w-8' : 'bg-border/70 hover:bg-border w-3'
                     }`}
                     aria-label={`Go to achievements slide ${index + 1}`}
                   />
@@ -375,7 +375,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={handleAchievementNext}
-                className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
                 aria-label="Next achievement"
               >
                 <span className="text-xl font-bold leading-none">{'>'}</span>
@@ -394,14 +394,14 @@ export default function Home() {
       </section>
 
       {/* Courses Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Our Courses</p>
             <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
               Admission Open FOR SESSION 2026
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               INTER+IIT-JEE MAIN/EAPCET LONG TERM JEE AND NEET
             </p>
           </div>
@@ -411,16 +411,16 @@ export default function Home() {
               <Link
                 key={course.to}
                 to={course.to}
-                className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-border overflow-hidden transition-all hover:-translate-y-1"
+                className="group bg-light rounded-xl shadow-md hover:shadow-xl border border-border overflow-hidden transition-all hover:-translate-y-1"
               >
-                <div className="p-6 flex items-center justify-center h-48 bg-light">
+                <div className="p-6 flex items-center justify-center h-48 bg-light/80">
                   <img src={course.image} alt={course.title} className="max-h-36 object-contain" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-heading text-dark mb-3 group-hover:text-primary transition-colors">
                     {course.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{course.description}</p>
+                  <p className="text-dark/70 text-sm leading-relaxed mb-4">{course.description}</p>
                   <span className="text-primary font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     Know More <ArrowRight className="w-4 h-4" />
                   </span>
@@ -432,27 +432,27 @@ export default function Home() {
       </section>
 
       {/* Why Sri Abhida Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Why Sri Abhida?</p>
             <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
               Why Thousands of Parents Trust Us
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               Sri Abhida is built on the belief that every student can succeed with the right guidance, discipline, and personalised teaching.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {whyFeatures.map((feature) => (
-              <div key={feature.title} className="flex gap-5 p-6 bg-light rounded-xl hover:shadow-md transition-all">
+              <div key={feature.title} className="flex gap-5 p-6 bg-light/80 rounded-xl hover:shadow-md transition-all">
                 <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                   <feature.icon className="w-7 h-7 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold font-heading text-dark mb-2">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  <p className="text-dark/70 leading-relaxed">{feature.description}</p>
                 </div>
               </div>
             ))}

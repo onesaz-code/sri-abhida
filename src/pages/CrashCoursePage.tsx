@@ -19,16 +19,16 @@ export default function CrashCoursePage() {
       <PageHero title="Crash Course" backgroundImage="/images/course-hero.webp" />
 
       {/* Overview */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Program Overview</p>
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">Crash Course</h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 IIT JEE Crash Course is a comprehensive program designed for students aspiring to crack the IIT JEE exam. It offers in-depth coverage of the syllabus, focusing on building strong fundamentals in science and mathematics.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 This program includes regular tests, doubt-clearing sessions, and personalized guidance, making it ideal for students who wish to thoroughly prepare and excel in one of India's most challenging engineering entrance exams.
               </p>
               <Link
@@ -56,7 +56,7 @@ export default function CrashCoursePage() {
       </section>
 
       {/* Distinctive Features */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-10 text-center">
@@ -64,13 +64,13 @@ export default function CrashCoursePage() {
             </h2>
             <div className="space-y-4">
               {distinctiveFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start gap-3 bg-light rounded-lg p-4">
+                <div key={index} className="flex items-start gap-3 bg-light/80 rounded-lg p-4">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <p className="text-gray-700">{feature}</p>
+                  <p className="text-dark/80">{feature}</p>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-gray-500 mt-6 text-center italic">
+            <p className="text-sm text-dark/60 mt-6 text-center italic">
               Note: Study Materials are available in the English medium only.
             </p>
           </div>

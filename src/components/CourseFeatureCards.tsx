@@ -27,13 +27,13 @@ export default function CourseFeatureCards() {
       {features.map((feature) => (
         <div
           key={feature.title}
-          className="bg-white rounded-xl p-8 shadow-md border-b-4 border-primary hover:bg-primary hover:text-white transition-all duration-300 group"
+        className="bg-light rounded-xl p-8 shadow-md border-b-4 border-primary hover:bg-primary hover:text-white transition-all duration-300 group"
         >
-          <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-white/20">
+          <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-light/20">
             <feature.icon className="w-7 h-7 text-primary group-hover:text-white" />
           </div>
           <h3 className="text-xl font-bold font-heading mb-3">{feature.title}</h3>
-          <p className="text-gray-600 group-hover:text-white/90 leading-relaxed">
+          <p className="text-dark/70 group-hover:text-white/90 leading-relaxed">
             {feature.description}
           </p>
         </div>

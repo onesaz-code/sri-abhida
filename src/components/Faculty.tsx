@@ -164,7 +164,7 @@ export default function Faculty() {
           <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
             Meet the Team
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-dark/70 max-w-2xl mx-auto">
             Learn from experienced teachers from IITs, NITs, and top universities
           </p>
         </div>
@@ -174,9 +174,9 @@ export default function Faculty() {
             {visibleFaculty.map((member, index) => (
               <div
                 key={`${member.name}-${index}`}
-                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border-b-4 border-primary group"
+                className="bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border-b-4 border-primary group"
               >
-                <div className="aspect-[3/4] overflow-hidden bg-gray-100">
+                <div className="aspect-[3/4] overflow-hidden bg-light/80">
                   <AdaptiveImage
                     src={member.image}
                     alt={member.name}
@@ -192,10 +192,10 @@ export default function Faculty() {
                     {member.name}
                   </h3>
                   {member.qualification && (
-                    <p className="text-gray-600 text-xs">{member.qualification}</p>
+                    <p className="text-dark/70 text-xs">{member.qualification}</p>
                   )}
                   {member.role && (
-                    <p className="text-gray-500 text-xs">{member.role}</p>
+                    <p className="text-dark/60 text-xs">{member.role}</p>
                   )}
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function Faculty() {
             <button
               type="button"
               onClick={handlePrev}
-              className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+              className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
               aria-label="Previous faculty"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -219,7 +219,7 @@ export default function Faculty() {
                   type="button"
                   onClick={() => setStartIndex(index)}
                   className={`h-3 rounded-full transition-all ${
-                    index === startIndex ? 'bg-primary w-8' : 'bg-gray-300 hover:bg-gray-400 w-3'
+                    index === startIndex ? 'bg-primary w-8' : 'bg-border/70 hover:bg-border w-3'
                   }`}
                   aria-label={`Go to faculty slide ${index + 1}`}
                 />
@@ -229,7 +229,7 @@ export default function Faculty() {
             <button
               type="button"
               onClick={handleNext}
-              className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+              className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
               aria-label="Next faculty"
             >
               <ChevronRight className="w-5 h-5" />

@@ -88,13 +88,13 @@ export default function Gallery() {
     <>
       <PageHero title="Gallery" backgroundImage="/images/about-hero.jpg" />
 
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">
               Gallery
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               SRI ABHIDA Boys Residential Campus, PATANCHERU-BHANRU
             </p>
           </div>
@@ -119,13 +119,13 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">
               Campus Highlights
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               A closer look at campus life, classrooms, and student moments.
             </p>
           </div>
@@ -166,7 +166,7 @@ export default function Gallery() {
               <button
                 type="button"
                 onClick={closeViewer}
-                className="rounded-full border border-white/40 px-3 py-1.5 text-sm hover:bg-white hover:text-black transition"
+                className="rounded-full border border-white/40 px-3 py-1.5 text-sm hover:bg-light hover:text-dark transition"
               >
                 Close
               </button>
@@ -184,7 +184,7 @@ export default function Gallery() {
               <button
                 type="button"
                 onClick={showPrev}
-                className="rounded-full border border-white/40 px-5 py-2 text-sm hover:bg-white hover:text-black transition"
+                className="rounded-full border border-white/40 px-5 py-2 text-sm hover:bg-light hover:text-dark transition"
               >
                 Previous
               </button>
@@ -194,7 +194,7 @@ export default function Gallery() {
               <button
                 type="button"
                 onClick={showNext}
-                className="rounded-full border border-white/40 px-5 py-2 text-sm hover:bg-white hover:text-black transition"
+                className="rounded-full border border-white/40 px-5 py-2 text-sm hover:bg-light hover:text-dark transition"
               >
                 Next
               </button>

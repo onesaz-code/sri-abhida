@@ -50,19 +50,19 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-light">
       <div className="max-w-container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
             Success Stories
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-dark/70">
             Hear from our students who achieved their dreams
           </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="bg-light rounded-2xl p-8 md:p-12 relative overflow-hidden">
+          <div className="bg-light/70 rounded-2xl p-8 md:p-12 relative overflow-hidden">
             <Quote className="absolute top-8 right-8 w-16 h-16 text-primary/10" />
 
             <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -77,7 +77,7 @@ export default function Testimonials() {
               </div>
 
               <div className="flex-1 text-center md:text-left">
-                <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
+                <p className="text-dark/80 text-lg leading-relaxed mb-6 italic">
                   "{testimonials[currentIndex].quote}"
                 </p>
                 <div>
@@ -107,7 +107,7 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={() => setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
-              className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+              className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
@@ -118,7 +118,7 @@ export default function Testimonials() {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`h-3 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-primary w-8' : 'bg-gray-300 hover:bg-gray-400 w-3'
+                    index === currentIndex ? 'bg-primary w-8' : 'bg-border/70 hover:bg-border w-3'
                   }`}
                 />
               ))}
@@ -126,7 +126,7 @@ export default function Testimonials() {
 
             <button
               onClick={() => setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
-              className="w-11 h-11 bg-white border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
+              className="w-11 h-11 bg-light border-2 border-border rounded-full flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-colors"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

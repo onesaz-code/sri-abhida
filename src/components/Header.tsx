@@ -1,6 +1,7 @@
 import { Menu, X, ChevronDown, MapPin, Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Header() {
             </a>
           </div>
           <div className="flex items-center gap-4">
+            <ThemeSwitcher />
             <a href="tel:+919553300062" className="flex items-center gap-1.5 hover:text-primary transition-colors">
               <Phone className="w-3.5 h-3.5" />
               9553300062 / 63
@@ -43,7 +45,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      <header className="bg-light shadow-md sticky top-0 z-50 overflow-visible">
         <div className="max-w-container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
@@ -70,12 +72,12 @@ export default function Header() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${coursesDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {coursesDropdownOpen && (
-                  <div className="absolute top-full left-0 mt-2 bg-white shadow-xl rounded-lg py-2 min-w-[280px] border border-border">
+                  <div className="absolute top-full left-0 mt-2 bg-light shadow-xl rounded-lg py-2 min-w-[280px] border border-border">
                     {courseLinks.map((link) => (
                       <Link
                         key={link.to}
                         to={link.to}
-                        className="block px-4 py-2.5 text-dark hover:bg-light hover:text-primary transition-colors text-sm"
+                        className="block px-4 py-2.5 text-dark hover:bg-light/80 hover:text-primary transition-colors text-sm"
                         onClick={() => setCoursesDropdownOpen(false)}
                       >
                         {link.label}
@@ -134,7 +136,7 @@ export default function Header() {
                       <Link
                         key={link.to}
                         to={link.to}
-                        className="text-gray-600 hover:text-primary transition-colors text-sm"
+                        className="text-dark/70 hover:text-primary transition-colors text-sm"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {link.label}
@@ -157,6 +159,8 @@ export default function Header() {
               >
                 Student Login
               </a>
+
+              <ThemeSwitcher variant="menu" />
             </nav>
           )}
         </div>

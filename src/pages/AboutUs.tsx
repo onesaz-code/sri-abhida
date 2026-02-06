@@ -31,13 +31,13 @@ export default function AboutUs() {
       <PageHero title="About Us" backgroundImage="/images/about-hero.jpg" />
 
       {/* Why Abhida */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Why Abhida?</p>
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">About Us</h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-dark/70 leading-relaxed">
                 <p>
                   <span className="text-primary font-semibold">SRI ABHIDA</span> - When one takes the path less travelled and succeeds, he knows how tough his journey has been. And he will be all ready to support those who want to follow that path. SRI ABHIDA Institute is an outcome of that desire to support those who dream and dare.
                 </p>
@@ -67,7 +67,7 @@ export default function AboutUs() {
         <div className="max-w-container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">Our Approach</h2>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-dark/70 leading-relaxed text-lg">
               Towards this their entire thought process is redefined and the approach is re-established. The student-friendly faculty hand-holds each one of them on this journey to excellence. They are encouraged to settle for nothing but the best at every step of this academic journey. Thus instilling positivity and confidence in every student.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function AboutUs() {
       </section>
 
       {/* Features */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">What We Offer</h2>
@@ -84,13 +84,13 @@ export default function AboutUs() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-white rounded-xl p-8 shadow-md border-b-4 border-primary hover:bg-primary hover:text-white transition-all duration-300 group text-center"
+                className="bg-light rounded-xl p-8 shadow-md border-b-4 border-primary hover:bg-primary hover:text-white transition-all duration-300 group text-center"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-5 mx-auto group-hover:bg-white/20">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-5 mx-auto group-hover:bg-light/20">
                   <feature.icon className="w-8 h-8 text-primary group-hover:text-white" />
                 </div>
                 <h3 className="text-lg font-bold font-heading mb-3">{feature.title}</h3>
-                <p className="text-gray-600 group-hover:text-white/90 text-sm leading-relaxed">
+                <p className="text-dark/70 group-hover:text-white/90 text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </div>

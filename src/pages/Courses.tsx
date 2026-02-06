@@ -40,11 +40,11 @@ export default function Courses() {
     <>
       <PageHero title="Courses" backgroundImage="/images/course-hero.webp" />
 
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">Our Courses</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               Choose from our comprehensive range of courses designed for competitive exam success.
             </p>
           </div>
@@ -54,16 +54,16 @@ export default function Courses() {
               <Link
                 key={course.to}
                 to={course.to}
-                className="group bg-white rounded-xl shadow-md hover:shadow-xl border border-border overflow-hidden transition-all hover:-translate-y-1"
+                className="group bg-light rounded-xl shadow-md hover:shadow-xl border border-border overflow-hidden transition-all hover:-translate-y-1"
               >
-                <div className="p-6 flex items-center justify-center h-48 bg-light">
+                <div className="p-6 flex items-center justify-center h-48 bg-light/80">
                   <img src={course.image} alt={course.title} className="max-h-36 object-contain" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-heading text-dark mb-3 group-hover:text-primary transition-colors">
                     {course.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{course.description}</p>
+                  <p className="text-dark/70 text-sm leading-relaxed mb-4">{course.description}</p>
                   <span className="text-primary font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                     Know More <ArrowRight className="w-4 h-4" />
                   </span>

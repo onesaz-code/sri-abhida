@@ -44,11 +44,11 @@ export default function Results() {
     <>
       <PageHero title="Results" backgroundImage="/images/course-hero.webp" />
 
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">Our Results</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
               Our students consistently achieve top ranks in IIT-JEE, NEET, and other competitive examinations.
             </p>
           </div>
@@ -61,7 +61,7 @@ export default function Results() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
                   {group.images.map((img, index) => (
-                    <div key={index} className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow bg-white">
+                    <div key={index} className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow bg-light">
                       <img src={img.src} alt={img.alt} className="w-full h-auto object-cover" />
                     </div>
                   ))}

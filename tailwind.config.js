@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#e00433',
-        secondary: '#124b75',
-        light: '#f5f5f5',
-        dark: '#212121',
-        border: '#e0e0e0',
+        primary: 'rgb(var(--color-primary) / <alpha-value>)',
+        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+        light: 'rgb(var(--color-light) / <alpha-value>)',
+        dark: 'rgb(var(--color-dark) / <alpha-value>)',
+        border: 'rgb(var(--color-border) / <alpha-value>)',
       },
       fontFamily: {
         heading: ['"Plus Jakarta Sans"', 'sans-serif'],

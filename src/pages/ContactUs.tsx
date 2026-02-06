@@ -25,11 +25,11 @@ export default function ContactUs() {
     <>
       <PageHero title="Contact Us" backgroundImage="/images/about-hero.jpg" />
 
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-4">Contact Us</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-dark/70 text-lg max-w-2xl mx-auto">
               IIT-JEE | NEET | Foundations Coaching in Hyderabad | SRI ABHIDA
               <br />
               <span className="text-primary font-semibold">Exclusive Day Scholar Campus @ Nizampet</span>
@@ -48,7 +48,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <p className="font-semibold text-dark mb-1">Address</p>
-                      <p className="text-gray-600 text-sm">Behind CMR shopping mall, Nizampet, Kukatpally, Hyderabad-500090</p>
+                      <p className="text-dark/70 text-sm">Behind CMR shopping mall, Nizampet, Kukatpally, Hyderabad-500090</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -57,8 +57,8 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <p className="font-semibold text-dark mb-1">Phone</p>
-                      <a href="tel:+919553300062" className="text-gray-600 text-sm hover:text-primary transition-colors block">9553300062</a>
-                      <a href="tel:+919553300063" className="text-gray-600 text-sm hover:text-primary transition-colors block">9553300063</a>
+                      <a href="tel:+919553300062" className="text-dark/70 text-sm hover:text-primary transition-colors block">9553300062</a>
+                      <a href="tel:+919553300063" className="text-dark/70 text-sm hover:text-primary transition-colors block">9553300063</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -67,7 +67,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <p className="font-semibold text-dark mb-1">Email</p>
-                      <a href="mailto:info@sriabhida.co.in" className="text-gray-600 text-sm hover:text-primary transition-colors">info@sriabhida.co.in</a>
+                      <a href="mailto:info@sriabhida.co.in" className="text-dark/70 text-sm hover:text-primary transition-colors">info@sriabhida.co.in</a>
                     </div>
                   </div>
                 </div>
@@ -110,8 +110,8 @@ export default function ContactUs() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {campuses.map((campus) => (
-              <div key={campus.name} className="bg-white rounded-xl overflow-hidden shadow-md">
-                <div className="h-48 bg-gray-200">
+              <div key={campus.name} className="bg-light rounded-xl overflow-hidden shadow-md">
+                <div className="h-48 bg-light/80">
                   <iframe
                     src={campus.mapUrl}
                     width="100%"
@@ -125,7 +125,7 @@ export default function ContactUs() {
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold font-heading text-dark mb-2">{campus.name}</h3>
-                  <p className="text-gray-600 text-sm">{campus.address}</p>
+                  <p className="text-dark/70 text-sm">{campus.address}</p>
                 </div>
               </div>
             ))}

@@ -10,7 +10,7 @@ export default function LongTermCoachingPage() {
       <PageHero title="IIT/JEE Long Term Coaching" backgroundImage="/images/course-hero.webp" />
 
       {/* Overview */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -18,29 +18,29 @@ export default function LongTermCoachingPage() {
               <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">
                 IIT/JEE Long Term Coaching
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 IIT JEE Long Term Coaching is a comprehensive program designed for students aspiring to crack the IIT JEE exam. Spanning over a year or more, it offers in-depth coverage of the syllabus, focusing on building strong fundamentals in science and mathematics.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-dark/70 leading-relaxed mb-6">
                 This program includes regular tests, doubt-clearing sessions, and personalized guidance, making it ideal for students who wish to thoroughly prepare and excel in one of India's most challenging engineering entrance exams.
               </p>
 
               {/* Key Details */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                <div className="bg-light rounded-lg p-4 text-center">
+                <div className="bg-light/80 rounded-lg p-4 text-center">
                   <Calendar className="w-6 h-6 text-primary mx-auto mb-2" />
                   <p className="text-sm font-semibold text-dark">1 Year Course</p>
-                  <p className="text-xs text-gray-500">For Repeaters</p>
+                  <p className="text-xs text-dark/60">For Repeaters</p>
                 </div>
-                <div className="bg-light rounded-lg p-4 text-center">
+                <div className="bg-light/80 rounded-lg p-4 text-center">
                   <Clock className="w-6 h-6 text-primary mx-auto mb-2" />
                   <p className="text-sm font-semibold text-dark">July - February</p>
-                  <p className="text-xs text-gray-500">10 Months Duration</p>
+                  <p className="text-xs text-dark/60">10 Months Duration</p>
                 </div>
-                <div className="bg-light rounded-lg p-4 text-center">
+                <div className="bg-light/80 rounded-lg p-4 text-center">
                   <BookOpen className="w-6 h-6 text-primary mx-auto mb-2" />
                   <p className="text-sm font-semibold text-dark">Complete Syllabus</p>
-                  <p className="text-xs text-gray-500">10+1 & 10+2</p>
+                  <p className="text-xs text-dark/60">10+1 & 10+2</p>
                 </div>
               </div>
 
@@ -69,14 +69,14 @@ export default function LongTermCoachingPage() {
       </section>
 
       {/* Course Details */}
-      <section className="py-20">
+      <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">Course Details</h2>
-            <p className="text-gray-600 leading-relaxed text-lg mb-6">
+            <p className="text-dark/70 leading-relaxed text-lg mb-6">
               This 10-month course covers complete First (10+1) and Second (10+2) year syllabus in Fastrack manner with proper guidelines to crack JEE MAIN and JEE ADVANCE Exams.
             </p>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-dark/70 leading-relaxed text-lg">
               1 year course for JEE Main & Advanced long term classes for repeaters (who completed Intermediate or 10+2). Course Duration: Last week of July to Last week of February.
             </p>
           </div>

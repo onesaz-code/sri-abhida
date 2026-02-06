@@ -5,6 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-primary: 224 4 51;
+    --color-secondary: 18 75 117;
+    --color-light: 245 245 245;
+    --color-dark: 33 33 33;
+    --color-border: 224 224 224;
+  }
+
   html {
     scroll-behavior: smooth;
   }

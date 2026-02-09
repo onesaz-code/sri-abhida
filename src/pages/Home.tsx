@@ -179,16 +179,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            poster="/images/video_fallback.jpeg"
-          >
-            <source src="/videos/campus.mp4" type="video/mp4" />
-          </video>
+          <div
+            className="w-full h-full"
+            style={{
+              backgroundImage:
+                "url('/images/hero/hero_girl.png'), url('/images/hero/classroom_bg.jpg')",
+              backgroundPosition: 'right bottom, center',
+              backgroundSize: 'contain, cover',
+              backgroundRepeat: 'no-repeat, no-repeat',
+            }}
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-black/65 to-black/35"></div>
         </div>
 

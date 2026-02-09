@@ -199,7 +199,7 @@ export default function Home() {
                 Admission Open FOR SESSION 2026
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 leading-tight">
-                We Design and Improve a Brighter Future For Your Education
+                Designing Your Path to Excellence. Transforming Education, Brightening Futures
               </h1>
               <p className="text-lg md:text-xl mb-8 text-white/70 leading-relaxed max-w-xl">
                 We create innovative learning solutions that inspire students, empower educators, and drive academic success. From personalized programs to modern teaching methods, we help you achieve real, measurable growth with confidence.
@@ -229,66 +229,6 @@ export default function Home() {
                 showCourseField
                 variant="transparent"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-secondary">
-        <div className="max-w-container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
-            <div>
-              <div className="text-5xl font-bold font-heading mb-2">1000+</div>
-              <div className="text-blue-200 text-lg">Happy Students</div>
-              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
-                Guided with expert mentorship, proven study plans, and consistent academic support to achieve their goals.
-              </p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-heading mb-2">800+</div>
-              <div className="text-blue-200 text-lg">Engineering Admissions</div>
-              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
-                Successfully placed students in top engineering colleges through focused preparation and result-driven training.
-              </p>
-            </div>
-            <div>
-              <div className="text-5xl font-bold font-heading mb-2">150+</div>
-              <div className="text-blue-200 text-lg">JEE Admissions</div>
-              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
-                Cracked one of India&apos;s toughest exams with strategic coaching, concept clarity, and continuous performance tracking.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-20 bg-light">
-        <div className="max-w-container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img src="/images/sectionimage1.jpg" alt="Sri Abhida Campus" className="rounded-2xl shadow-lg w-full" />
-            </div>
-            <div>
-              <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">About Us</p>
-              <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">
-                Sri Abhida About Us
-              </h2>
-              <div className="space-y-4 text-dark/70 leading-relaxed">
-                <p>
-                  <strong className="text-dark">Our Mission:</strong> Our mission is to empower students through exceptional education, fostering innovative thinking, and building a strong foundation for future academic and career success in a supportive, inclusive environment.
-                </p>
-                <p>
-                  <strong className="text-dark">Our Vision:</strong> Quality education is the right of every student. Sri Abhida was started with a single vision that every Parent must see best in their Child. Our major motto is 'unearthing the naturally talented students' around the world who cannot afford corporate fee structure.
-                </p>
-              </div>
-              <Link
-                to="/about-us"
-                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors font-semibold mt-6"
-              >
-                Know More <ArrowRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
         </div>
@@ -393,6 +333,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Sri Abhida Section */}
+      <section className="py-20 bg-light">
+        <div className="max-w-container mx-auto px-4">
+          <div className="text-center mb-14">
+            <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Why Sri Abhida?</p>
+            <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
+              Why Thousands of Parents Trust Us
+            </h2>
+            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
+              Sri Abhida is built on the belief that every student can succeed with the right guidance, discipline, and personalised teaching.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {whyFeatures.map((feature) => (
+              <div key={feature.title} className="flex gap-5 p-6 bg-light/80 rounded-xl hover:shadow-md transition-all">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <feature.icon className="w-7 h-7 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-heading text-dark mb-2">{feature.title}</h3>
+                  <p className="text-dark/70 leading-relaxed">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Courses Section */}
       <section className="py-20 bg-light">
         <div className="max-w-container mx-auto px-4">
@@ -431,40 +400,71 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Sri Abhida Section */}
-      <section className="py-20 bg-light">
-        <div className="max-w-container mx-auto px-4">
-          <div className="text-center mb-14">
-            <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">Why Sri Abhida?</p>
-            <h2 className="text-3xl md:text-5xl font-bold font-heading text-dark mb-4">
-              Why Thousands of Parents Trust Us
-            </h2>
-            <p className="text-dark/70 max-w-2xl mx-auto text-lg">
-              Sri Abhida is built on the belief that every student can succeed with the right guidance, discipline, and personalised teaching.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {whyFeatures.map((feature) => (
-              <div key={feature.title} className="flex gap-5 p-6 bg-light/80 rounded-xl hover:shadow-md transition-all">
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <feature.icon className="w-7 h-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold font-heading text-dark mb-2">{feature.title}</h3>
-                  <p className="text-dark/70 leading-relaxed">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Faculty */}
       <Faculty />
 
-      {/* Testimonials */}
-      <Testimonials />
+      {/* Stats Section */}
+      <section className="py-16 bg-secondary">
+        <div className="max-w-container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+            <div>
+              <div className="text-5xl font-bold font-heading mb-2">1000+</div>
+              <div className="text-blue-200 text-lg">Happy Students</div>
+              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
+                Guided with expert mentorship, proven study plans, and consistent academic support to achieve their goals.
+              </p>
+            </div>
+            <div>
+              <div className="text-5xl font-bold font-heading mb-2">800+</div>
+              <div className="text-blue-200 text-lg">Engineering Admissions</div>
+              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
+                Successfully placed students in top engineering colleges through focused preparation and result-driven training.
+              </p>
+            </div>
+            <div>
+              <div className="text-5xl font-bold font-heading mb-2">150+</div>
+              <div className="text-blue-200 text-lg">JEE Admissions</div>
+              <p className="mt-3 text-sm md:text-base text-blue-100/90 max-w-xs mx-auto">
+                Cracked one of India&apos;s toughest exams with strategic coaching, concept clarity, and continuous performance tracking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 bg-light">
+        <div className="max-w-container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <img src="/images/sectionimage1.jpg" alt="Sri Abhida Campus" className="rounded-2xl shadow-lg w-full" />
+            </div>
+            <div>
+              <p className="text-primary font-semibold mb-2 uppercase tracking-wider text-sm">About Us</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-heading text-dark mb-6">
+                Sri Abhida About Us
+              </h2>
+              <div className="space-y-4 text-dark/70 leading-relaxed">
+                <p>
+                  <strong className="text-dark">Our Mission:</strong> Our mission is to empower students through exceptional education, fostering innovative thinking, and building a strong foundation for future academic and career success in a supportive, inclusive environment.
+                </p>
+                <p>
+                  <strong className="text-dark">Our Vision:</strong> Quality education is the right of every student. Sri Abhida was started with a single vision that every Parent must see best in their Child. Our major motto is 'unearthing the naturally talented students' around the world who cannot afford corporate fee structure.
+                </p>
+              </div>
+              <Link
+                to="/about-us"
+                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition-colors font-semibold mt-6"
+              >
+                Know More <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Mobile CTA Form */}
       <section className="py-16 bg-light lg:hidden">

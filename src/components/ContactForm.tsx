@@ -29,21 +29,11 @@ export default function ContactForm({
   });
 
   const courseTypeOptions = [
-    { value: "EAMCET_MPC", label: "EAMCET MPC (160 Bits)" },
-    { value: "JEE MAINS", label: "JEE MAINS 2020 (75bits numerical)" },
-    { value: "JEEMAIN_2021", label: "JEE MAIN 2021 (90bits numerical)" },
-    { value: "BIOP", label: "JEE MAIN (75bits no negative)" },
-    { value: "JEEMAIN_2025", label: "JEE MAIN 2025 (75bits Nearest integer)" },
-    {
-      value: "JEEMAIN_2022",
-      label: "JEE MAIN 2022-24 (90bits Nearest integer)",
-    },
-    { value: "JEE ADVANCED", label: "JEE ADVANCED" },
-    { value: "NEET", label: "NEET OLD MODEL (180bits)" },
-    { value: "NEET_2021", label: "NEET (200 bits new model) 2025" },
-    { value: "CUSTOM", label: "CUSTOM" },
-    { value: "BITSAT", label: "BITSAT" },
-    { value: "BOARD", label: "BOARD" },
+    { value: "IIT_JEE_MAIN_ADVANCED", label: "IIT JEE (Main & Advanced)" },
+    { value: "IIT_JEE_LONG_TERM", label: "IIT/JEE Long Term Coaching" },
+    { value: "FOUNDATION_COURSE", label: "Foundation Course – 8th, 9th & 10th Class" },
+    { value: "NEET", label: "NEET" },
+    { value: "CRASH_COURSE", label: "Crash Course" },
   ];
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -83,7 +73,7 @@ export default function ContactForm({
   };
 
     try {
-      const res = await fetch("http://localhost:7077/public/Mail-Notification", {
+      const res = await fetch("http://admin.onesaz.com/public/Mail-Notification", {
         method: "post",
         headers: {
           "Content-Type": "application/json",

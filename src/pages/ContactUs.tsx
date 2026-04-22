@@ -58,7 +58,6 @@ export default function ContactUs() {
                     <div>
                       <p className="font-semibold text-dark mb-1">Phone</p>
                       <a href="tel:+919642100062" className="text-dark/70 text-sm hover:text-primary transition-colors block">+919642100062</a>
-                      <a href="tel:+919642100062" className="text-dark/70 text-sm hover:text-primary transition-colors block">+919642100062</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

@@ -64,13 +64,12 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-blue-200 text-sm">
-                  Behind CMR shopping mall, Nizampet, Kukatpally, Hyderabad-500090
+                  FLAT NO. 401, 7-2-1813/5/A, SVSS NIVAS, WEST WING, FATHE NAGAR, SANATH NAGAR, HYDERABAD, INDIA 500018
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:+919642100062" className="text-blue-200 hover:text-primary transition-colors text-sm">+919642100062</a>
                   <a href="tel:+919642100062" className="text-blue-200 hover:text-primary transition-colors text-sm">+919642100062</a>
                 </div>
               </li>

@@ -5,19 +5,19 @@ import ContactForm from '../components/ContactForm';
 const campuses = [
   {
     name: 'Day Campus at Nizampet',
-    address: 'Behind CMR shopping mall, Nizampet, Kukatpally, Hyderabad-500090',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.3919!3d17.4975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzUxLjAiTiA3OMKwMjMnMzAuOCJF!5e0!3m2!1sen!2sin!4v1',
+    address: 'FLAT NO. 401, 7-2-1813/5/A, SVSS NIVAS, WEST WING, FATHE NAGAR, SANATH NAGAR, HYDERABAD, INDIA 500018',
+    // mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.3919!3d17.4975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzUxLjAiTiA3OMKwMjMnMzAuOCJF!5e0!3m2!1sen!2sin!4v1',
   },
-  {
-    name: 'Boys Hostel Campus',
-    address: 'Near Lahari Resorts, Bhanur, Patancheru (Mandal)',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.2719!3d17.5375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMyJzE1LjAiTiA3OMKwMTYnMTguOCJF!5e0!3m2!1sen!2sin!4v1',
-  },
-  {
-    name: 'Girls Hostel Campus',
-    address: 'Lane no -9, CBCID colony, Hydernagar',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.3619!3d17.4875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzE1LjAiTiA3OMKwMjEnNDIuOCJF!5e0!3m2!1sen!2sin!4v1',
-  },
+  // {
+  //   name: 'Boys Hostel Campus',
+  //   address: 'Near Lahari Resorts, Bhanur, Patancheru (Mandal)',
+  //   // mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.2719!3d17.5375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDMyJzE1LjAiTiA3OMKwMTYnMTguOCJF!5e0!3m2!1sen!2sin!4v1',
+  // },
+  // {
+  //   name: 'Girls Hostel Campus',
+  //   address: 'Lane no -9, CBCID colony, Hydernagar',
+  //   // mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.4!2d78.3619!3d17.4875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzE1LjAiTiA3OMKwMjEnNDIuOCJF!5e0!3m2!1sen!2sin!4v1',
+  // },
 ];
 
 export default function ContactUs() {
@@ -48,7 +48,7 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <p className="font-semibold text-dark mb-1">Address</p>
-                      <p className="text-dark/70 text-sm">Behind CMR shopping mall, Nizampet, Kukatpally, Hyderabad-500090</p>
+                      <p className="text-dark/70 text-sm">FLAT NO. 401, 7-2-1813/5/A, SVSS NIVAS, WEST WING, FATHE NAGAR, SANATH NAGAR, HYDERABAD, INDIA 500018</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -57,8 +57,8 @@ export default function ContactUs() {
                     </div>
                     <div>
                       <p className="font-semibold text-dark mb-1">Phone</p>
-                      <a href="tel:+919553300062" className="text-dark/70 text-sm hover:text-primary transition-colors block">9553300062</a>
-                      <a href="tel:+919553300063" className="text-dark/70 text-sm hover:text-primary transition-colors block">9553300063</a>
+                      <a href="tel:+919642100062" className="text-dark/70 text-sm hover:text-primary transition-colors block">+919642100062</a>
+                      <a href="tel:+919642100062" className="text-dark/70 text-sm hover:text-primary transition-colors block">+919642100062</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -112,6 +112,7 @@ export default function ContactUs() {
             {campuses.map((campus) => (
               <div key={campus.name} className="bg-light rounded-xl overflow-hidden shadow-md">
                 <div className="h-48 bg-light/80">
+                  {/*
                   <iframe
                     src={campus.mapUrl}
                     width="100%"
@@ -122,6 +123,7 @@ export default function ContactUs() {
                     referrerPolicy="no-referrer-when-downgrade"
                     title={campus.name}
                   />
+                  */}
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold font-heading text-dark mb-2">{campus.name}</h3>

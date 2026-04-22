@@ -70,8 +70,8 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="flex flex-col">
-                  <a href="tel:+919553300062" className="text-blue-200 hover:text-primary transition-colors text-sm">9553300062</a>
-                  <a href="tel:+919553300063" className="text-blue-200 hover:text-primary transition-colors text-sm">9553300063</a>
+                  <a href="tel:+919642100062" className="text-blue-200 hover:text-primary transition-colors text-sm">+919642100062</a>
+                  <a href="tel:+919642100062" className="text-blue-200 hover:text-primary transition-colors text-sm">+919642100062</a>
                 </div>
               </li>
               <li className="flex items-center gap-3">

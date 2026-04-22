@@ -36,9 +36,9 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-4">
             <ThemeSwitcher />
-            <a href="tel:+919553300062" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+            <a href="tel:+919642100062" className="flex items-center gap-1.5 hover:text-primary transition-colors">
               <Phone className="w-3.5 h-3.5" />
-              9553300062 / 63
+              +919642100062
             </a>
           </div>
         </div>
